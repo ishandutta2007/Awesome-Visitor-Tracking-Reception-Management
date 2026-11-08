@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="100%" height="340" style="background:#0b0f19;border-radius:16px;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="50%" stop-color="#121829"/>
+      <stop offset="100%" stop-color="#0b132b"/>
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Filter for soft glow -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <style>
+      /* CSS Keyframes for dynamic / animated aspects */
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.3; transform: scale(1); }
+        50% { opacity: 0.65; transform: scale(1.08); }
+      }
+      @keyframes floatSlow1 {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+      @keyframes floatSlow2 {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(8px); }
+      }
+      @keyframes radarSweep {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes dashFlow {
+        to { stroke-dashoffset: -40; }
+      }
+      @keyframes liveBlink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.3; }
+      }
+
+      .pulse-circle {
+        transform-origin: 1050px 140px;
+        animation: pulseGlow 5s ease-in-out infinite;
+      }
+      .badge-float-1 {
+        animation: floatSlow1 4s ease-in-out infinite;
+      }
+      .badge-float-2 {
+        animation: floatSlow2 4.5s ease-in-out infinite;
+      }
+      .radar-line {
+        transform-origin: 1050px 140px;
+        animation: radarSweep 8s linear infinite;
+      }
+      .flow-path {
+        stroke-dasharray: 6, 6;
+        animation: dashFlow 2s linear infinite;
+      }
+      .live-dot {
+        animation: liveBlink 1.8s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="340" fill="url(#bgGrad)"/>
+
+  <!-- Background Decorative Grid -->
+  <g opacity="0.07" stroke="#94a3b8" stroke-width="1">
+    <line x1="0" y1="68" x2="1200" y2="68"/>
+    <line x1="0" y1="136" x2="1200" y2="136"/>
+    <line x1="0" y1="204" x2="1200" y2="204"/>
+    <line x1="0" y1="272" x2="1200" y2="272"/>
+    <line x1="150" y1="0" x2="150" y2="340"/>
+    <line x1="300" y1="0" x2="300" y2="340"/>
+    <line x1="450" y1="0" x2="450" y2="340"/>
+    <line x1="600" y1="0" x2="600" y2="340"/>
+    <line x1="750" y1="0" x2="750" y2="340"/>
+    <line x1="900" y1="0" x2="900" y2="340"/>
+    <line x1="1050" y1="0" x2="1050" y2="340"/>
+  </g>
+
+  <!-- Dynamic Glowing Elements (in background, away from text) -->
+  <circle class="pulse-circle" cx="1050" cy="140" r="110" fill="url(#glowGrad)"/>
+  
+  <!-- Interactive / Dynamic Radar Rings representing Visitor Tracking -->
+  <g opacity="0.35">
+    <circle cx="1050" cy="140" r="90" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4, 4"/>
+    <circle cx="1050" cy="140" r="60" fill="none" stroke="#0ea5e9" stroke-width="1.5"/>
+    <circle cx="1050" cy="140" r="30" fill="none" stroke="#10b981" stroke-width="1.5"/>
+    <line class="radar-line" x1="1050" y1="140" x2="1140" y2="140" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Flowing Connection Lines -->
+  <path class="flow-path" d="M 680,85 C 780,85 820,130 920,130" fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.4"/>
+  <path class="flow-path" d="M 720,245 C 800,245 840,160 940,150" fill="none" stroke="#34d399" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Dynamic Floating Decorative Tech Cards (right side) -->
+  <g class="badge-float-1">
+    <rect x="910" y="55" width="160" height="42" rx="8" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1" opacity="0.9"/>
+    <circle cx="930" cy="76" r="5" fill="#38bdf8"/>
+    <text x="945" y="81" font-size="12" font-weight="600" fill="#e2e8f0">Digital Check-In</text>
+  </g>
+
+  <g class="badge-float-2">
+    <rect x="950" y="215" width="180" height="42" rx="8" fill="url(#cardGrad)" stroke="#34d399" stroke-width="1" opacity="0.9"/>
+    <circle class="live-dot" cx="970" cy="236" r="5" fill="#10b981"/>
+    <text x="985" y="241" font-size="12" font-weight="600" fill="#e2e8f0">Real-Time Host Alerts</text>
+  </g>
+
+  <g opacity="0.75">
+    <rect x="850" y="145" width="140" height="38" rx="8" fill="url(#cardGrad)" stroke="#6366f1" stroke-width="1"/>
+    <circle cx="868" cy="164" r="4" fill="#a855f7"/>
+    <text x="880" y="169" font-size="11" font-weight="500" fill="#cbd5e1">Badge &amp; Pass Log</text>
+  </g>
+
+  <!-- Foreground Content: Header, Titles & Subtitles (high contrast & clear) -->
+  <g transform="translate(70, 0)">
+    <!-- Category Pill -->
+    <g transform="translate(0, 48)">
+      <rect x="0" y="0" width="280" height="30" rx="15" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <circle class="live-dot" cx="16" cy="15" r="5" fill="#22c55e"/>
+      <text x="32" y="20" font-size="12" font-weight="700" fill="#93c5fd" letter-spacing="1">CURATED WORKPLACE DIRECTORY</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="132" font-size="40" font-weight="800" fill="url(#titleGrad)" letter-spacing="-0.5">
+      Visitor Tracking &amp; Reception
+    </text>
+    <text x="0" y="180" font-size="38" font-weight="800" fill="#ffffff" letter-spacing="-0.5">
+      Management Systems
+    </text>
+
+    <!-- Subtitle / Mission Statement -->
+    <text x="0" y="222" font-size="16" font-weight="400" fill="#94a3b8">
+      Top enterprise cloud SaaS platforms &amp; production-ready open-source alternatives
+    </text>
+    <text x="0" y="246" font-size="15" font-weight="400" fill="#64748b">
+      Kiosk check-in · Host SMS &amp; Slack notifications · Thermal badge printing · Compliance &amp; NDAs
+    </text>
+
+    <!-- Bottom Feature Pills -->
+    <g transform="translate(0, 274)">
+      <!-- Pill 1 -->
+      <rect x="0" y="0" width="140" height="26" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+      <text x="14" y="17" font-size="12" font-weight="600" fill="#cbd5e1">🏢 Enterprise SaaS</text>
+
+      <!-- Pill 2 -->
+      <rect x="152" y="0" width="145" height="26" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+      <text x="166" y="17" font-size="12" font-weight="600" fill="#cbd5e1">💻 Self-Hosted VMS</text>
+
+      <!-- Pill 3 -->
+      <rect x="309" y="0" width="130" height="26" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+      <text x="323" y="17" font-size="12" font-weight="600" fill="#cbd5e1">🎫 Gate Passes</text>
+
+      <!-- Pill 4 -->
+      <rect x="451" y="0" width="135" height="26" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+      <text x="465" y="17" font-size="12" font-weight="600" fill="#cbd5e1">📋 Audit Logging</text>
+    </g>
+  </g>
+</svg>
