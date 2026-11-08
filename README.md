@@ -8,7 +8,7 @@
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://awesome.re/badge.svg" alt="Awesome" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC0_1.0-blue.svg?style=flat-square" alt="License: CC0" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Visitor-Tracking-Reception-Management/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Visitor-Tracking-Reception-Management?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Visitor-Tracking-Reception-Management/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Visitor-Tracking-Reception-Management?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
 
@@ -56,9 +56,9 @@ The global **Visitor Management System (VMS)** market is currently valued at app
 
 ## 🟩 Open-Source Software
 
-💻 Self-hosted, community-driven Visitor Tracking and Reception Management software and templates. Sorted by GitHub star count in descending order.
+💻 Self-hosted, community-driven Visitor Tracking and Reception Management software and templates. Sorted by GitHub Stars_Count in descending order.
 
-| 📦 Project | ⭐ Stars | 🛠️ Stack | 📜 License | 💡 Description & Best For |
+| 📦 Project | ⭐ GitHub_Stars | 🛠️ Stack | 📜 License | 💡 Description & Best For |
 |---|---|---|---|---|
 | **[heyform/heyform](https://github.com/heyform/heyform)** | [![Stars](https://img.shields.io/github/stars/heyform/heyform?style=social&color=white)](https://github.com/heyform/heyform/stargazers) | Node.js / React / Mongo | Open Source | 📝 Open-source form builder widely integrated with n8n/PostgreSQL to create customizable front-desk check-in portals with automated host email/Slack/SMS dispatch. |
 | **[neozhu/visitormanagement](https://github.com/neozhu/visitormanagement)** | [![Stars](https://img.shields.io/github/stars/neozhu/visitormanagement?style=social&color=white)](https://github.com/neozhu/visitormanagement/stargazers) | C# / .NET / SQL Server | Open Source | 🏛️ Full digital check-in to replace paper registers with entry/exit tracking, visitor history logs, and security guard oversight for corporate or university campuses. |
@@ -116,7 +116,7 @@ Your support is deeply appreciated! ❤️
 Contributions are welcome! If you know of an open-source Visitor Tracking or Reception Management tool that should be listed here:
 
 1. 🍴 Fork this repository.
-2. ✍️ Add your project under [Open-Source Software](#-open-source-software) with its GitHub star badge, tech stack, license, and description.
+2. ✍️ Add your project under [Open-Source Software](#-open-source-software) with its GitHub Stars_Badge, tech stack, license, and description.
 3. 🔢 Keep the star-sorted order intact.
 4. 🚀 Submit a pull request!
 
