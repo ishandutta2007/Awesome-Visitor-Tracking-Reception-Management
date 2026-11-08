@@ -1,147 +1,93 @@
-# Awesome-Visitor-Tracking-Reception-Management
+# Awesome Visitor Tracking & Reception Management [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-# Awesome Visitor Tracking & Reception Management
+> A curated list of top **Visitor Tracking and Reception Management** software — comparing enterprise SaaS platforms with starting pricing and free tier limits alongside production-ready open-source alternatives for front-desk digital check-in, host notifications, badge printing, and visitor logging.
 
-> A curated list of top Visitor Tracking and Reception Management platforms — both SaaS/Hosted commercial solutions and open-source alternatives for digital check-in, host notifications, and visitor logging.  
-> 🌟 Star this repo if you find it useful! 🌟
+🌟 **Star this repo if you find it useful!** 🌟
 
 ---
 
-## 📋 Table of Contents
+## 📑 Table of Contents
 
+- [Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
 - [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-  - [Envoy Visitors](#envoy-visitors)
-  - [SwipedOn](#swipedon)
-  - [The Receptionist for iPad](#the-receptionist-for-ipad)
-  - [Proxyclick](#proxyclick)
-  - [Sine by Honeywell](#sine-by-honeywell)
-  - [Traction Guest](#traction-guest)
-  - [iLobby](#ilobby)
-  - [Greetly](#greetly)
 - [Open-Source Software](#-open-source-software)
-  - [visify](#visify)
-  - [INSA Visitor Management System](#insa-visitor-management-system)
-  - [VisitorInOut](#visitorinout)
-  - [neozhu/visitormanagement](#neozhuvisitormanagement)
-  - [karibu](#karibu)
-  - [HeyForm + n8n Pattern](#heyform--n8n-pattern)
-- [Comparison at a Glance](#-comparison-at-a-glance)
+- [Key Feature Comparison](#-key-feature-comparison)
 - [Contributing](#-contributing)
+- [License](#-license)
+
+---
+
+## 📈 Sector Overview & Market Dynamics
+
+The global **Visitor Management System (VMS)** market is currently valued at approximately **$2.1B to $2.4B** and is projected to expand to **$4.0B–$6.5B+ by the early 2030s** at a compound annual growth rate (CAGR) of **~12%–14%**. The market is **moderately fragmented**: while large industrial conglomerates (Honeywell, HID Global, Johnson Controls) and well-funded workplace unicorns (Envoy) lead multi-site enterprise deployments, the lower barrier to entry for cloud SaaS and specialized compliance requirements (such as healthcare, schools, and regional privacy mandates) foster a healthy and competitive long tail of agile mid-market providers.
 
 ---
 
 ## 🟦 SaaS / Hosted Platforms
 
-Commercial, cloud-hosted Visitor Tracking and Reception Management platforms. These are not open-source but are included as reference points for feature comparison.
+Commercial, cloud-hosted Visitor Tracking and Reception Management platforms. Sorted by company scale (market cap / valuation / revenue) in descending order.
 
-### Envoy Visitors
-**Type:** Workplace visitor management with badge printing  
-Envoy is one of the most recognized visitor management platforms, offering intuitive sign-in, visitor badge printing, host notifications, and workplace analytics. It is frequently compared against SwipedOn, Proxyclick, and The Receptionist as the category leaders [citation:1]. Envoy's strengths include a polished UI, integration capabilities with calendars and access control systems, and health/safety compliance features.
-
-### SwipedOn
-**Type:** iPad-based visitor management  
-SwipedOn provides a tablet-based check-in experience for reception desks. It is consistently listed as a top alternative to Envoy, offering visitor registration, badge printing, and host notifications. Suited for offices wanting a simple, visual sign-in flow without complex configuration.
-
-### The Receptionist for iPad
-**Type:** Dedicated iPad receptionist app  
-The Receptionist focuses on turning an iPad into a digital receptionist. It handles visitor sign-in, host notifications, and visitor logs. Often compared alongside Envoy and SwipedOn as a mid-market option for organizations wanting a dedicated kiosk experience.
-
-### Proxyclick
-**Type:** Enterprise visitor management  
-Proxyclick (now part of Thales) targets enterprise and multi-site organizations with visitor management, contractor management, and compliance features. It is frequently cited as a direct competitor to Envoy, with stronger enterprise governance and integration capabilities [citation:1].
-
-### Sine by Honeywell
-**Type:** Industrial and enterprise visitor management  
-Sine (acquired by Honeywell) provides visitor management with a focus on industrial, construction, and large enterprise environments. It includes contractor induction, compliance tracking, and multi-site management. Honeywell Forge Visitor Management continues this enterprise focus [citation:8].
-
-### Traction Guest
-**Type:** Enterprise visitor management with compliance  
-Traction Guest targets enterprises needing visitor management with strong compliance and security controls. It offers pre-registration, watchlist screening, NDA signing, and evacuation reporting. Suited for organizations with regulated visitor handling requirements.
-
-### iLobby
-**Type:** Enterprise visitor and contractor management  
-iLobby provides visitor management for enterprises, with features including contractor management, compliance tracking, and multi-location support. Positioned for organizations needing more than basic reception sign-in.
-
-### Greetly
-**Type:** Customizable touchless visitor management  
-Greetly markets itself as the only fully customizable visitor management system, with no-touch check-in and a digital receptionist app. It manages visitors, vendors, interviews, deliveries, and exits [citation:3]. Suited for organizations wanting a flexible, branded reception experience.
+| Platform | Company Valuation / Revenue | Starting Price | Free Tier / Free Trial Limits | Key Strengths & Target Use Case |
+|---|---|---|---|---|
+| **[Sine (Honeywell)](https://www.sine.co/)** | **~$146.9B** Market Cap / $38.5B Rev (Honeywell HON) | **$69 / month** (Sine Core entry) | **30-day free trial**; no permanent free tier | Industrial, logistics, construction, contractor induction, and enterprise health/safety compliance. |
+| **[Proxyclick (Eptura)](https://www.eptura.com/products/visitor/)** | **~$50M–$100M+** Private (backed by Thoma Bravo / Eptura) | **$100 / month** (or custom site quote) | **15-day free trial** upon sales request; no permanent free tier | Enterprise multi-site access governance, deep physical access control (PACS), and global compliance. |
+| **[Envoy Visitors](https://envoy.com/products/visitors/)** | **$1.4B** Valuation (Series C Unicorn) / ~$90M ARR | **$109 / month per location** (Standard tier) | **Permanent Free Tier:** Up to **100 visitor entries/month**, host notifications & employee sign-in (no badge printing/NDAs); **14-day free trial** on paid tiers | Polished iPad check-in, badge printing, workplace scheduling, NDA signing, and enterprise integrations. |
+| **[iLobby (FacilityOS)](https://ilobby.com/)** | **$100M+** Funding (Insight Partners) / ~$25M+ Rev | **$199 / location / month** (VisitorOS) | **Sales demo sandbox trial on request**; no permanent free tier | Turnkey hardware + software kiosk deployments with contractor compliance, screening, and asset monitoring. |
+| **[Traction Guest (Sign In Enterprise)](https://tractionguest.com/)** | Acquired by **PSG / ShieldCo** / Enterprise multi-million ARR | **$275 / device / month** (Salesforce AppExchange starting tier) | **Enterprise trial / sandbox on request**; no permanent free tier | High-security enterprise visitor screening, custom watchlist checks, NDAs, and audit workflows. |
+| **[SwipedOn](https://www.swipedOn.com/)** | **~$10.5M** Rev (SmartSpace Software / Sign In App group) | **$49 / month** (billed annually) | **14-day free trial** (full access without credit card); no permanent free tier | Intuitive tablet check-in, badge printing, emergency roll-call rosters, and quick QR sign-ins. |
+| **[The Receptionist for iPad](https://thereceptionist.com/)** | Part of **Sign In App ecosystem** / Bootstrapped SMB leader | **$52.50 / month** ($630/site/year billed annually) | **15-day free trial** (unlimited features without credit card); no permanent free tier | Dedicated iPad kiosk experience with two-way SMS communication, badge printing, and contactless scan. |
+| **[Greetly](https://www.greetly.com/)** | Bootstrapped / Acquired SMB portfolio (~$1M+ Rev) | **$99 / month** (Essential tier billed annually) | **14-day free trial** (no credit card required); no permanent free tier | 100% white-labeled touchless reception, voice check-in, delivery logging, and visitor routing. |
 
 ---
 
 ## 🟩 Open-Source Software
 
-Self-hosted, community-driven Visitor Tracking and Reception Management tools. The open-source ecosystem for dedicated visitor management is limited; most available projects are early-stage or niche solutions.
+Self-hosted, community-driven Visitor Tracking and Reception Management software and templates. Sorted by GitHub star count in descending order.
 
-### visify
-**Stack:** LAMP (PHP / MySQL) / Python | **License:** Open Source (per GitHub)  
-A visitor tracking and management utility built on the LAMP stack. Features include tracking visitors by mobile number, capturing photo/name/affiliation/host and authorized access areas, gate pass generation, automated daily reports, multi-gate tracking, and scalability via tablets or mobile devices [citation:5]. It requires an ESC POS compatible printer for badge/gate pass printing. Cloud-deployable or self-hosted.  
-**Best for:** Organizations wanting a straightforward, self-hosted gate pass and visitor logging system with photo capture and multi-gate support.
-
-### INSA Visitor Management System
-**Stack:** MERN (MongoDB / Express / React / Node.js) | **License:** Open Source (per GitHub)  
-A comprehensive visitor management application with role-based access control covering Admin, Department User, Security Team, and Front Gate Security [citation:2]. The workflow spans request submission by department users, security review and approval, and gate check-in/check-out with item verification and timestamps. Includes demo credentials for immediate testing and a full audit trail.  
-**Best for:** Organizations wanting a multi-role workflow (request → approve → check-in → check-out) with a complete audit trail, deployable on a standard MERN stack.
-
-### VisitorInOut
-**Stack:** (Check repository) | **License:** MIT  
-An open-source visitor management system launched in August 2024, specifically designed for library environments (built on Koha library management concepts) [citation:9]. Named the "Dr. Ranganathan Release" in honor of the library science pioneer. Available on GitHub with a video demonstration.  
-**Best for:** Libraries and institutions needing visitor tracking integrated with library workflows.
-
-### neozhu/visitormanagement
-**Stack:** C# | **License:** Open Source (per GitHub)  
-A visitor management system with 369 GitHub stars and 132 forks, actively maintained (pushed 7 months ago) [citation:12]. Designed for institutions needing digital check-in to replace paper registers, with entry/exit time tracking and history logging.  
-**Best for:** .NET/C# organizations wanting a relatively mature open-source visitor logging system with a proven community following.
-
-### karibu
-**Stack:** Go | **License:** MIT  
-An open-source guestlog application for tracking event attendees using the SSH protocol. Features an interactive terminal experience with a Bubbletea UI, lightweight Go backend, and SSH-powered check-in [citation:14]. Explicitly designed for tech conferences, meetups, hackathons, and community events.  
-**Best for:** Developer events and conferences wanting a lightweight, SSH-based attendee check-in system without a web UI.
-
-### HeyForm + n8n Pattern
-**Stack:** HeyForm (forms) + n8n (workflow automation) | **License:** Open Source (both tools)  
-A pragmatic, no-code approach to building a self-hosted visitor management system: visitors fill out a branded check-in form in HeyForm (8,805+ GitHub stars), n8n watches for submissions and triggers email/Slack/SMS notifications to hosts, and data is stored in PostgreSQL for compliance [citation:6]. Deployment can be completed in 1–2 days with a VPS (~$20/month).  
-**Best for:** Organizations wanting a DIY visitor check-in workflow without building custom software, using proven open-source components.
+| Project | Stars | Stack | License | Description & Best For |
+|---|---|---|---|---|
+| **[heyform/heyform](https://github.com/heyform/heyform)** | [![Stars](https://img.shields.io/github/stars/heyform/heyform?style=social&color=white)](https://github.com/heyform/heyform/stargazers) | Node.js / React / Mongo | Open Source | Open-source form builder widely integrated with n8n/PostgreSQL to create customizable front-desk check-in portals with automated host email/Slack/SMS dispatch. |
+| **[neozhu/visitormanagement](https://github.com/neozhu/visitormanagement)** | [![Stars](https://img.shields.io/github/stars/neozhu/visitormanagement?style=social&color=white)](https://github.com/neozhu/visitormanagement/stargazers) | C# / .NET / SQL Server | Open Source | Full digital check-in to replace paper registers with entry/exit tracking, visitor history logs, and security guard oversight for corporate or university campuses. |
+| **[AmitXShukla/Visitor-Management-App](https://github.com/AmitXShukla/Visitor-Management-App)** | [![Stars](https://img.shields.io/github/stars/AmitXShukla/Visitor-Management-App?style=social&color=white)](https://github.com/AmitXShukla/Visitor-Management-App/stargazers) | Angular 13 / Node / Express / MongoDB | MIT | Electronic visitor register app for managing host and guest records with photo capture, clean responsive UI, and visit records. |
+| **[sanjeev662/visitor-management-system-react](https://github.com/sanjeev662/visitor-management-system-react)** | [![Stars](https://img.shields.io/github/stars/sanjeev662/visitor-management-system-react?style=social&color=white)](https://github.com/sanjeev662/visitor-management-system-react/stargazers) | React / Node.js | MIT | Modern visitor management dashboard with role-based access control for administrators, receptionists, and gate guards. |
+| **[COS301-SE-2022/Intelligent-VMS](https://github.com/COS301-SE-2022/Intelligent-VMS-Visitor-Management-System-)** | [![Stars](https://img.shields.io/github/stars/COS301-SE-2022/Intelligent-VMS-Visitor-Management-System-?style=social&color=white)](https://github.com/COS301-SE-2022/Intelligent-VMS-Visitor-Management-System-/stargazers) | TypeScript / Python / React | MIT | Intelligent residential and commercial visitor management system featuring invitation links, contractor permits, and AI visiting analytics. |
+| **[shubhamkumar27/Django-Visitor-Management-System](https://github.com/shubhamkumar27/Django-Visitor-Management-System)** | [![Stars](https://img.shields.io/github/stars/shubhamkumar27/Django-Visitor-Management-System?style=social&color=white)](https://github.com/shubhamkumar27/Django-Visitor-Management-System/stargazers) | Python / Django / SQLite | Open Source | Lightweight Django web portal for tracking campus visitor logs, host meetings, check-ins, and departures. |
+| **[md-sazzadul-islam/front-desk-visitor-management](https://github.com/md-sazzadul-islam/front-desk-visitor-management)** | [![Stars](https://img.shields.io/github/stars/md-sazzadul-islam/front-desk-visitor-management?style=social&color=white)](https://github.com/md-sazzadul-islam/front-desk-visitor-management/stargazers) | PHP / Laravel / MySQL | MIT | Front-desk reception management application designed to handle visitor registrations, guest check-in receipts, and visitor statistics. |
+| **[rohan-takmoge/Gate-Pass-management-System](https://github.com/rohan-takmoge/Gate-Pass-management-System)** | [![Stars](https://img.shields.io/github/stars/rohan-takmoge/Gate-Pass-management-System?style=social&color=white)](https://github.com/rohan-takmoge/Gate-Pass-management-System/stargazers) | PHP / MySQL | MIT | Gate pass and visitor management portal providing pass generation, entry/exit logging, and verification for offices and industrial facilities. |
+| **[iamKunal/Visitor-Management-Sys](https://github.com/iamKunal/Visitor-Management-Sys)** | [![Stars](https://img.shields.io/github/stars/iamKunal/Visitor-Management-Sys?style=social&color=white)](https://github.com/iamKunal/Visitor-Management-Sys/stargazers) | Python / Django | MIT | Automated campus security tracking system for laborers, technicians, and guests moving across perimeter gates. |
+| **[ParshwaS/VMS](https://github.com/ParshwaS/VMS)** | [![Stars](https://img.shields.io/github/stars/ParshwaS/VMS?style=social&color=white)](https://github.com/ParshwaS/VMS/stargazers) | Python / Django / Bootstrap | MIT | Clean visitor logging software featuring host notification triggers, visitor entry badging, and search filters. |
+| **[P0etInc0de/VisitorPortal](https://github.com/P0etInc0de/VisitorPortal)** | [![Stars](https://img.shields.io/github/stars/P0etInc0de/VisitorPortal?style=social&color=white)](https://github.com/P0etInc0de/VisitorPortal/stargazers) | PHP / Laravel | Open Source | Open-source Laravel visitor management portal with visit pre-registration, reception check-in/out, PDF badges, welcome displays, and RBAC. |
+| **[Codefor-Future/people-registry](https://github.com/Codefor-Future/people-registry)** | [![Stars](https://img.shields.io/github/stars/Codefor-Future/people-registry?style=social&color=white)](https://github.com/Codefor-Future/people-registry/stargazers) | JavaScript / Node.js | MIT | Contactless QR-code visitor register allowing guests to self-check-in on mobile devices without physical paperwork. |
+| **[trohit/visify](https://github.com/trohit/visify)** | [![Stars](https://img.shields.io/github/stars/trohit/visify?style=social&color=white)](https://github.com/trohit/visify/stargazers) | PHP / Python / MySQL | Open Source | Lightweight visitor tracking utility supporting ESC/POS thermal badge printing, photo capture, multi-gate logs, and gate pass generation. |
+| **[IamMuuo/karibu](https://github.com/IamMuuo/karibu)** | [![Stars](https://img.shields.io/github/stars/IamMuuo/karibu?style=social&color=white)](https://github.com/IamMuuo/karibu/stargazers) | Go / Charm Bubbletea | MIT | Interactive terminal guestlog application for developer events, hackathons, and tech conferences over SSH. |
+| **[mishravk79/visitorinout](https://github.com/mishravk79/visitorinout)** | [![Stars](https://img.shields.io/github/stars/mishravk79/visitorinout?style=social&color=white)](https://github.com/mishravk79/visitorinout/stargazers) | PHP / MySQL / Koha | MIT | Dr. Ranganathan release visitor log tailored specifically for library attendance, member tracking, and entry statistics. |
 
 ---
 
-## 📊 Comparison at a Glance
+## 🔍 Key Feature Comparison
 
-| Software | License | Type | Self-Hosted | Best For |
-|----------|---------|------|-------------|----------|
-| **Envoy** | Proprietary | Workplace VMS | ❌ | Polished enterprise reception |
-| **SwipedOn** | Proprietary | iPad VMS | ❌ | Simple tablet check-in |
-| **The Receptionist** | Proprietary | iPad receptionist | ❌ | Dedicated kiosk experience |
-| **Proxyclick** | Proprietary | Enterprise VMS | ❌ | Multi-site enterprise |
-| **Sine (Honeywell)** | Proprietary | Industrial VMS | ❌ | Industrial/construction |
-| **Traction Guest** | Proprietary | Enterprise VMS | ❌ | Compliance-heavy environments |
-| **iLobby** | Proprietary | Enterprise VMS | ❌ | Multi-location enterprise |
-| **Greetly** | Proprietary | Touchless VMS | ❌ | Customizable branded reception |
-| **visify** | Open Source | LAMP VMS | ✅ | Gate pass + multi-gate logging |
-| **INSA VMS** | Open Source | MERN VMS | ✅ | Multi-role approval workflow |
-| **VisitorInOut** | MIT | Library VMS | ✅ | Library visitor tracking |
-| **neozhu/visitormanagement** | Open Source | C# VMS | ✅ | .NET organizations |
-| **karibu** | MIT | SSH guestlog | ✅ | Tech events/conferences |
-| **HeyForm + n8n** | Open Source | DIY form workflow | ✅ | No-code quick deployment |
+| Feature | Enterprise SaaS (Envoy, Honeywell Sine, iLobby) | SMB SaaS (SwipedOn, The Receptionist, Greetly) | Self-Hosted Open-Source (VMS, Laravel, Django) |
+|---|---|---|---|
+| **Deployment** | Multi-tenant Cloud / Hybrid | Cloud / App Store (iPad / Android) | Docker, Bare Metal, On-Premises |
+| **Free Tier Available** | Rare (Envoy has 100 entries/mo plan) | 14–15 Day Free Trials | 100% Free & Open Source |
+| **Badge Printing** | Wireless Brother/Zebra AirPrint & RFID | Bluetooth / AirPrint Thermal Badges | ESC/POS Thermal & Printable PDF |
+| **Hardware Required** | Enrolled iPads / Kiosk Stands / Gate Access | Off-the-shelf iPad or Tablet | Any browser, tablet, or terminal |
+| **Compliance & NDA** | Watchlist screening, ITAR, HIPAA, GDPR | Digital signatures, basic NDAs | Custom database storage |
+| **Host Notifications** | Slack, Microsoft Teams, SMS, Webhooks | SMS, Email, Push Notifications | Email / Custom Webhook triggers |
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you know of an open-source Visitor Tracking or Reception Management tool that should be listed here, please open a pull request with:
+Contributions are welcome! If you know of an open-source Visitor Tracking or Reception Management tool that should be listed here:
 
-- Project name and URL
-- Brief description (1–2 sentences)
-- Stack and license
-- Why it stands out
-
-Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source. Note that the open-source ecosystem for dedicated visitor management is limited; many available projects are early-stage or built for niche use cases (libraries, events) rather than full Envoy alternatives.
+1. Fork this repository.
+2. Add your project under [Open-Source Software](#-open-source-software) with its GitHub star badge, tech stack, license, and description.
+3. Keep the star-sorted order intact.
+4. Submit a pull request!
 
 ---
 
 ## 📄 License
 
-This list is released under CC0 1.0 Universal (Public Domain). The software projects listed retain their respective licenses.
-
----
-
-⭐ **If this list helped you discover a useful tool, please star the repo!** ⭐
+This repository is licensed under [CC0 1.0 Universal](LICENSE) (Public Domain). Individual tools and projects retain their respective software licenses.
